@@ -3,13 +3,50 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pop Quiz Hotshot</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>REWORK</title>
 </head>
 
 <body>
+    <!-- <button id="scores" class="btn">View High Scores</button> -->
+    <section id="scores"> <a href="highscores.html">View High Scores!</a></section>
+    <section id="timer" class="timer hide">place holder text for time remaining</section>
+    <div class="container">
+        <section id="introBox">
+            <article>
+                <h1>Pop Quiz</h1>
+                <h2>Try to answer the following questions as quickly and as accurately as possible to earn the highest
+                    score.
+                    But keep in mind that wrong answers will deduct from your remaining time and lower your score!
+                    <br><br>
+                    Are you ready?
+                </h2>
 
+            </article>
+        </section>
+        <section id="questionBox" class="hide">
+            <article id="question">Question text will end up here</article>
+            <article id="answer-buttons" class="btn-grid">
+                <!-- <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button> -->
+            </article>
+        </section>
+        <article class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+        </article>
+        <article id="gameOver" class="hide">
+            <section>
+                <h1>Game Over!</h1>
+            </section>
+        </article>
+
+
+    </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>
