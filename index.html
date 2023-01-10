@@ -5,15 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./style.css">
+    <!-- linking the css style sheet -->
+    <link rel="stylesheet" href="./assets/CSS/style.css">
     <title>Pop Quiz Hot Shot!</title>
 </head>
 
 <body>
-    <!-- <button id="scores" class="btn">View High Scores</button> -->
+    <!-- here i am setting up each part of the page. a new section for each the high scores link as well as the timer.  i wanted this to be separate
+    of the main container on the page for css styling purposes.  i wanted everything within the main page to have the same style and formatt 
+    but these two sections were intentionally "removed" from that same container
+     -->
     <section id="scores" class="scores"> <a href="highscores.html">View High Scores!</a></section>
     <section id="timer" class="timer hide"></section>
     <div class="container">
+        <!-- i set up the main container for the page here and the had a separate section for each the intro to the quiz as well as a new section for where the
+    actual quiz will be displayed.  i did this so i could use the class 'hide' to choose which section to display and at what times
+         -->
         <section id="introBox">
             <article>
                 <h1>Pop Quiz</h1>
@@ -29,15 +36,13 @@
         <section id="questionBox" class="hide">
             <article id="question">Question text will end up here</article>
             <article id="answer-buttons" class="btn-grid">
-                <!-- <button class="btn">Answer 1</button>
-                <button class="btn">Answer 2</button>
-                <button class="btn">Answer 3</button>
-                <button class="btn">Answer 4</button> -->
             </article>
         </section>
+        <!-- button used to start the quiz -->
         <article class="controls">
             <button id="start-btn" class="start-btn btn">Start</button>
         </article>
+        <!-- similar to the intro box and question box, i set up a game over area that would hide or show on demand -->
         <article id="gameOver" class="hide">
             <section>
                 <h1>Game Over!</h1>
@@ -46,7 +51,8 @@
 
 
     </div>
-    <script src="./script.js"></script>
+    <!-- reference to my main java script file here -->
+    <script src="./assets/JS/script.js"></script>
 </body>
 
 </html>
