@@ -64,6 +64,9 @@
   a {
     color: white;
   }
+  .scores a {
+    color: black;
+  }
   .btn:hover {
     border-color: hotpink;
   }

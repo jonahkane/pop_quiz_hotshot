@@ -132,7 +132,7 @@ function gameOver () {
 
     questionElement.innerHTML = ""
     gameOverElement.classList.remove('hide')
-    // secondsLeft.classlist.add('hide')
+    
 
     if (secondsLeft >= 0) {
         let finalScore = secondsLeft;
